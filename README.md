@@ -1,11 +1,11 @@
 # CrossVideoReid
-## CrossVideo Reid  
-# PCA版本  
+
+## PCA版本  
 匈牙利算法  
 kalman 轨迹预测  
 
-# CNN 版本
-# 2020/7/13
+## CNN 版本
+### 2020/7/13
 双人版本 2020-07-13_V5_REID_CNN_.ipynb  
 解决问题：  
 1.交叉出现新id的情况  
@@ -17,7 +17,7 @@ kalman 轨迹预测
 增加 kalman预测bbox不会离开遮挡者bbox，利用IOU判断，预测的bbox与其他bbox 无交叉停止kalman跟踪  
 ![image](https://github.com/MakerCollider/20200623-haipeng_reid/blob/master/2020.07.01%2000_00_00-00_00_30.gif)  
 
-# 2020/7/16
+### 2020/7/16
 双人无Kalman跟踪版本 2020-07-16_V5_REID_CNN_Nokalman.ipynb  
 解决问题：
 因为多人情况复杂，kalman跟踪系统不能很好的表示所有可能
@@ -32,7 +32,7 @@ so，使用不同的存储系统只利用feature的不同区分出ID跟关键
 重叠消失使用限定匈牙利算法，没有消失使用常规匈牙利算法进行匹配  
 ![image](https://github.com/MakerCollider/20200623-haipeng_reid/blob/master/gif/2020.07.16_no_kalman200_00_30-00_00_39.gif)  
 ![image](https://github.com/MakerCollider/20200623-haipeng_reid/blob/master/gif/2020.07.16_no_kalman200_01_17-00_01_26.gif)  
-# 2020/7/27
+### 2020/7/27
 三人版本：2020-07-24_V5_Multi-REID_CNN.ipynb 
 使用YOLOV5检测器代替之前的efficendet检测器   
 使用交叉状态保持机制，避免因重叠导致的错误ID的情况，关闭kalman轨迹跟踪   
@@ -41,12 +41,12 @@ so，使用不同的存储系统只利用feature的不同区分出ID跟关键
 inherit combine_split create  
 继承 合并_分裂 构建  
 ![image](https://github.com/MakerCollider/20200623-haipeng_reid/blob/master/gif/2020.07.27_three_overlap_100_00_00-00_00_30.gif)  
-# 2020/7/28
+### 2020/7/28
 多人版本 2020-07-28_V5_Multi-REID_CNN.ipynb  
 已测试四人  
 ![image](https://github.com/MakerCollider/20200623-haipeng_reid/blob/master/gif/demo_four.gif)  
-# 2020/7/30   
-CrossVideo 文件夹用于方便使用  
+### 2020/7/30   
+New set CrossVideo 文件夹用于方便使用  
 Reid=CNN_REID(  
                 lib_dth=0.01,  
                 passage_dth=0.02,  
@@ -58,7 +58,7 @@ Reid=CNN_REID(
     #arg3:分辨不同人的阈值   
     #arg4:状态变为隐藏的帧数   
     #arg5:kalman开启的阀门  
- # 2020/8/4  
+ ### 2020/8/4  
  文件夹：MutilCrossVideo
  多视角~双视角的实现：  
  实现方法：  
